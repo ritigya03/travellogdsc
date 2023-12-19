@@ -678,7 +678,7 @@ color: white;
 border: none;
 }
 /* responsiveness */
-@media screen and (max-width:450px) {
+@media only screen and (max-width:600px) {
     .navbar{
         background-color: white;
         width: 100%;
@@ -912,7 +912,7 @@ border: none;
           .tint1{
             position: absolute;
             z-index: 300;
-            top: 4680px;
+            top: 4600px;
             width: 1000px;
               margin-left: 160px;
             height: 455px;
