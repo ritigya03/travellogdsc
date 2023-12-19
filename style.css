@@ -310,7 +310,7 @@ line-height: 36px;
 letter-spacing: 0em;
 text-align: justified;
 color: rgba(41, 45, 50, 1);
-width: 423px;;
+width: 423px;
 height: 108px;
 margin-left: 200px;
 }
@@ -774,9 +774,9 @@ border: none;
       margin-top: 100px;
       }
       .para{
-        font-family: 'Poppins', sans-serif;
+        
      
-      width: 423px;;
+      width: 423px;
       height: 108px;
       margin-left: 120px;
       }
