@@ -678,12 +678,14 @@ color: white;
 border: none;
 }
 /* responsiveness */
-@media only screen and (max-width:991px) {
+
+@media screen and (max-width:991px) {
     .navbar{
         background-color: white;
         width: 100%;
         height: 100%;
      position: relative;
+     display: block;
     }
     .nav{
         display: flex;
@@ -693,34 +695,36 @@ border: none;
         left: 15%;
         z-index: 1;
         height: 72px;
+        display: block;
     }
     .bg-img{
-    margin-left: 170px;
+    margin-left: 100px;
    
-     margin-top: 150px;
-     height: 500px;
-     width: 1000px;
+     margin-top: 180px;
+     height: 1000px;
+     width: 1100px;
       top : 50%;
       left: 50%;
     }
     .tint{
         position: absolute;
-        top:  150px;
-        margin-left: 170px;
+        top:  180px;
+        margin-left: 100px;
         z-index: 10;
-        height: 500px;
+        height: 1000px;
           object-fit: cover;
          
-          width: 1000px;
+          width: 1100px;
           background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 49.48%, rgba(0, 0, 0, 0.2) 100%),
       linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 60.94%, rgba(0, 0, 0, 0) 100%);
       
       }
       .explore{
+    
         height: 80px;
           position: absolute;
           margin-top: 60px;
-          margin-left: 520px;
+          margin-left: 490px;
           z-index: 30;
           top: 28%;
           left: 51.5%;
@@ -743,21 +747,82 @@ border: none;
        
        }
        .Upcoming{
-
-        display: flex;
-        
+        flex-direction: column-reverse;
         margin-top: 50px;
-        margin-left: 150px;
+        margin-left: 200px;
+       
+      }
+      .card{
+        width: 850px;
+        height: 700px;
+      }
+      .info{
+        gap: 90px;
+        margin-top: 30px;
+      }
+      .price{
+        gap: 330px;
+        margin-top: 30px;
+        margin-left: 50px;
+      }
+      .pr1{
+        font-size: 45px;
         
-        gap: 24px;
+      }
+      .pr2{
+        font-size: 30px;
+      }
+      .booknow{
+        height: 45px;
+        width: 170px;
+        font-size: 26px;
+       
+      }
+      .chill{
+       height: 50px;
+       width: 140px;
+       margin-left: 50px;
+       margin-top: 0px;
+       font-size: 30px;
+      }
+      .relax{
+        height: 50px;
+       width: 140px;
+       margin-left: 50px;
+       margin-top: 0px;
+       font-size: 30px;
+      }
+      .h2{
+        font-size: 30px;
+      }
+      .p1{
+        font-size: 35px;
+      }
+      .p2{
+        font-size: 35px;
+      }
+      .card-img{
+        width: 750px;
+        height: 400px;
+        margin-left: 50px;
       }
       .Upcoming1{
-        display: flex;
+     flex-direction: column-reverse;
         margin-top: 20px;
-        margin-left: 150px;
+        margin-left: 200px;
         
         gap: 24px;
       }
+      .book{
+        margin-top: 600px;
+        margin-left: 200px;
+ 
+        flex-direction: column-reverse;
+      }
+     .bookimg{
+      margin-left: 300px;
+      
+     }
       .destination{
         width: 100%;
        margin-top: 40px;
@@ -774,9 +839,9 @@ border: none;
       margin-top: 100px;
       }
       .para{
-        
+        font-family: 'Poppins', sans-serif;
      
-      width: 423px;
+      width: 423px;;
       height: 108px;
       margin-left: 120px;
       }
@@ -787,7 +852,7 @@ border: none;
       }
       .hold{
         position: absolute;
-        top: 2565px;
+        top: 7245px;
         width: 217px;
         height: 353px;
         padding: 285px, 47px, 32px, 47px;
@@ -797,23 +862,28 @@ border: none;
         
         }
         .hold-txt{
-         
+          font-family: 'Poppins', sans-serif;
            font-size: 24px;
            font-weight: 700;
-
+          line-height: 36px;
+          letter-spacing: 0em;
+          text-align: left;
         position: absolute;
-        top: 2830px;
+        top: 7510px;
         left: 623px;
-       
+        z-index: 200;
+        color: rgba(255, 255, 255, 1);
         
         }
         .hold-txt2{
-          
+          font-family: 'Poppins', sans-serif;
           font-size: 24px;
           font-weight: 700;
-         
+         line-height: 36px;
+         letter-spacing: 0em;
+         text-align: left;
         position: absolute;
-        top: 2830px;
+        top: 7510px;
         left: 883px;
         z-index: 200;
          color: rgba(255, 255, 255, 1);
@@ -898,8 +968,8 @@ border: none;
           }
           .bg{
             margin-top: 100px;
+            margin-left: 170px;
             width: 1000px;
-           margin-left: 170px;
           height:455px;
           object-fit: fill;
           
@@ -907,9 +977,9 @@ border: none;
           .tint1{
             position: absolute;
             z-index: 300;
-            top: 4600px;
+            top: 5320px;
             width: 1000px;
-              margin-left: 160px;
+            margin-left: 170px;
             height: 455px;
             background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
           }
@@ -925,7 +995,7 @@ border: none;
           position: absolute;
           z-index: 400;
           left: 330px;
-          top: 4720px;
+          top: 9400px;
           }
           .btn00{
             width:235px;
@@ -933,7 +1003,7 @@ border: none;
           padding: 16px;
           border-radius: 40px;
           position: absolute;
-          top: 4880px;
+          top: 9580px;
           z-index: 400;
           left: 575px;
           background: rgba(23, 123, 165, 1);
@@ -952,9 +1022,26 @@ border: none;
           width: 267px;
           height: 17px;
           z-index: 400;
-          top: 5460px;
+          top: 5470px;
           font-family: 'Poppins', sans-serif;
           left: 557px;
           position: absolute;
           }
-}
+          .text1{
+            text-align: center;
+            font-size: 32px;
+            width: 900px;
+            line-height: 50px;
+          }
+          .disc{
+            font-size: 65px;
+            width: 900px;
+          }
+}         
+      
+   
+   
+  
+        
+        
+         
